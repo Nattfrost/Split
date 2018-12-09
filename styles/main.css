@@ -11,10 +11,12 @@
   p, .header, .article {
   display: none !important;
   }
-  .gallery {
+  .content-section {
     grid-template-columns: 100% !important;
+    height: 80vh;
   }
 }
+
 
 
 * {
@@ -22,14 +24,13 @@
   padding: 0;
   box-sizing: border-box;
   transition: .5s;
+  background-color: white;
 }
 
 .logo {
   font-family: Display;
 }
-.gallery:nth-child(odd){
 
-}
 .container {
   display: grid;
   height: 100vh;
@@ -47,13 +48,13 @@
 }
 img {
   display: block;
-  height: 80vh;
-
+max-width: 90%;
+max-height: 90%;
 }
 .header{
-  color: white;
+  color: black;
     font-family: Display;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
     z-index: 100;
     font-size: 58pt;
 }
@@ -62,7 +63,10 @@ grid-column: 2;
   display: block;
   height: 80vh;
     font-family: Article;
-    color: white;
+    color: black;
+    font-size: 24pt;
+    padding: 4vh;
+    text-align: justify;
 }
 .content-section {
   scroll-snap-align: start;
@@ -89,5 +93,5 @@ img:hover{
   transform: translateX(-10%);
 }
 .article{
-  background-color: black
+  background-color: black;
 }
