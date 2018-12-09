@@ -7,79 +7,57 @@
   font-family: 'Article';
   src: url('../resources/fonts/MrsEavesRoman.woff') format('woff');
 }
+@media screen and (max-width: 992px) {
+  p, .header, .article {
+  display: none !important;
+  }
+  .gallery {
+    grid-template-columns: 100% !important;
+  }
+}
 
 * {
   margin: 0;
   padding: 0;
-  transition: 0.4s;
-}
-
-.title {
-  font-size: 48pt;
-  position: absolute;
-  margin-left: 34%;
-  font-family: Display;
-  color: white;
-  mix-blend-mode: difference;
-  z-index: 50;
+  box-sizing: border-box;
 }
 
 .logo {
-  top: 0;
-  background-color: white;
-  width: 100%;
-  height: 10vh;
-  position: fixed;
-  text-align: center;
-  font-size: 4vw;
-  letter-spacing: 2 2pt;
   font-family: Display;
-  z-index: 100;
 }
+.gallery:nth-child(odd){
 
-.article {
-  background-color: white;
-  font-family: Article;
-  padding: 4vw;
-  text-align: justify;
-  color: black;
 }
-
 .container {
-  margin-top: 20vh;
-  overflow: hidden;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+}
+
+.gallery {
   margin-left: 10vw;
-  width: 80vw;
+  display: grid;
+  height: 80vh;
+  width: 80%;
+  overflow: scroll;
+  grid-template-columns: 100%;
   scroll-snap-type: y mandatory;
 }
-
-.content-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
-  width: 100%;
-  display: grid;
-}
-
 img {
-  filter: brightness(.5);
-  width: 100%;
+  display: block;
+  height: 80vh;
+}
+p {
+grid-column: 2;
+  display: block;
+  height: 80vh;
+}
+.content-section {
+  scroll-snap-align: start;
+  display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-img:hover {
-  filter: brightness(1);
-  transform: scale(1.03);
-}
-
-.image-container {
-  overflow: hidden;
-}
-
-.footer {
-  bottom: 0;
-  background-color: white;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  height: 10vh;
+.gallery::-webkit-scrollbar {
+  display: none;
 }
