@@ -1,6 +1,7 @@
 
 
-const boxes = document.querySelectorAll('.content-section');
+const boxes = [...document.querySelectorAll('.content-section')];
+
 
 
 var options = {

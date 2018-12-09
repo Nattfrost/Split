@@ -21,7 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 1s;
+  transition: .5s;
 }
 
 .logo {
@@ -48,22 +48,46 @@
 img {
   display: block;
   height: 80vh;
+
+}
+.header{
+  color: white;
+    font-family: Display;
+    mix-blend-mode: exclusion;
+    z-index: 100;
+    font-size: 58pt;
 }
 p {
 grid-column: 2;
   display: block;
   height: 80vh;
+    font-family: Article;
+    color: white;
 }
 .content-section {
   scroll-snap-align: start;
   display: grid;
     grid-template-columns: 50% 50%;
     filter: brightness(.5);
-}
 
+}
+img:hover{
+
+}
 .gallery::-webkit-scrollbar {
   display: none;
 }
 .visible{
       filter: brightness(1);
+}
+
+.header-left {
+  transform: translateX(90%);
+}
+
+.header-right {
+  transform: translateX(-10%);
+}
+.article{
+  background-color: black
 }
