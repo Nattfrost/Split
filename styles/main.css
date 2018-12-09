@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Display';
+  src: url('../resources/fonts/Circular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Article';
+  src: url('../resources/fonts/MrsEavesRoman.woff') format('woff');
+}
+
+
+*{
+  text-align: center;
+}
+.article
+{
+  text-align: justify;
+  font-family: Article;
+  color: blue;
+}
+.logo
+{
+  font-family: Display;
+}
