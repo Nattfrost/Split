@@ -16,10 +16,12 @@
   }
 }
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 1s;
 }
 
 .logo {
@@ -56,8 +58,12 @@ grid-column: 2;
   scroll-snap-align: start;
   display: grid;
     grid-template-columns: 50% 50%;
+    filter: brightness(.5);
 }
 
 .gallery::-webkit-scrollbar {
   display: none;
+}
+.visible{
+      filter: brightness(1);
 }
