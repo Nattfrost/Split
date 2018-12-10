@@ -31,11 +31,12 @@
   font-family: Display;
   justify-content: center;
 }
-.logo h2
-{
+
+.logo h2 {
   margin-top: auto;
   font-size: 24pt;
 }
+
 .container {
   display: grid;
   height: 100vh;
@@ -67,7 +68,6 @@ img {
   font-family: Display;
   mix-blend-mode: exclusion;
   font-size: 58pt;
-
 }
 
 p {
@@ -95,13 +95,14 @@ p {
 
 .header-left {
   transform: translateX(90%);
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .header-right {
   transform: translateX(-10%);
-      background-color: var(--pink);
+  background-color: var(--pink);
 }
+
 .header-left:hover {
   transform: translateX(90%);
   background-color: var(--inverse-pink);
@@ -112,9 +113,7 @@ p {
   background-color: var(--inverse-green);
 }
 
-.article {
-
-}
+.article {}
 
 .info {
   height: 80vh;
@@ -130,7 +129,7 @@ p {
   transform: translateX(32vw);
 }
 
-.contact-info{
+.contact-info {
   font-size: 16pt;
   font-family: Article;
   position: fixed;
