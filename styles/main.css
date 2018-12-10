@@ -15,21 +15,6 @@
   src: url('../resources/fonts/MrsEavesRoman.woff') format('woff');
 }
 
-@media screen and (max-width: 992px) {
-  p, .header, .article {
-    display: none !important;
-  }
-
-  .content-section {
-    grid-template-columns: 100% !important;
-    height: 80vh;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -148,4 +133,6 @@ p {
 .contact-info{
   font-size: 16pt;
   font-family: Article;
+  position: fixed;
+  bottom: 3vh;
 }
