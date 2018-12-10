@@ -1,20 +1,28 @@
 @media screen and (max-width: 992px) {
-  p, .header, .article {
+  h2 {
     display: none !important;
   }
 
   .content-section {
-    grid-template-columns: 100% !important;
-    height: 80vh;
+    grid-template-rows: repeat(auto-fill, minmax(80vh, 20vh));
+    grid-template-columns: 100%;
+    /* grid-template-columns: 100% !important; */
+    /* height: 80vh; */
   }
 
   img {
+    max-height: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
   }
-<<<<<<< HEAD
+  
+  .info {
+    height: auto;
+  }
+  
+  section .content-section .visible p{
+    position: absolute;
+  }
 }
 
 /* comment */
-=======
->>>>>>> 7b9c4be0a5992e7ce9f276424d9e52d6fcd70341
