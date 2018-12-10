@@ -44,6 +44,7 @@
 }
 
 .gallery {
+
   position: fixed;
   margin-top: 10vh;
   margin-left: 10vw;
@@ -79,6 +80,7 @@ p {
 }
 
 .content-section {
+
   scroll-snap-align: start;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -90,6 +92,7 @@ p {
 }
 
 .visible {
+  opacity: 1;
   filter: brightness(1);
 }
 
@@ -134,4 +137,35 @@ p {
   font-family: Article;
   position: fixed;
   bottom: 3vh;
+}
+
+.booking-container {
+  position: fixed;
+  top: 45%;
+}
+.booking-button {
+  color: var(--inverse-pink);
+
+  transform: rotate(-90deg);
+
+}
+.booking-button:hover {
+
+transform: rotate(-90deg) scale(1.1);
+
+}
+.booking-form{
+
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  position: fixed;
+  height: 40vh;
+  width: 40vw;
+  border: solid red 2px;
+}
+.show-form {
+  opacity: 1;
+  display: block;
 }
