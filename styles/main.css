@@ -22,7 +22,12 @@ body {
   box-sizing: border-box;
   transition: 1.8s;
 }
-
+.mystery-box {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  background-color: var(--pink);
+}
 .path {
   fill: whitesmoke;
   stroke: var(--green);
@@ -79,13 +84,22 @@ img {
   margin: 4vh;
 }
 
-
 p {
   grid-column: 2;
   display: block;
   font-family: Display;
   font-size: 16pt;
   text-align: justify;
+}
+
+.info-right p {
+  color: whitesmoke;
+transform: translateX(2.5vw);
+
+}
+.info-left p {
+  color: var(--green);
+/* transform: translateX(50%); */
 }
 
 .content-section {
@@ -129,9 +143,6 @@ p {
   margin-bottom: 10vh;
 }
 
-.test {
-  transform: translateX(32vw);
-}
 
 .contact-info {
   font-size: 16pt;
