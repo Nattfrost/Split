@@ -1,8 +1,6 @@
 :root {
   --pink: #EAC3CB;
-  --inverse-pink: #104547;
-  --green: #93E1D8;
-  --inverse-green: #5F4BB6;
+  --green: #104547;
 }
 
 @font-face {
@@ -14,13 +12,27 @@
   font-family: 'Article';
   src: url('../resources/fonts/MrsEavesRoman.woff') format('woff');
 }
+body {
+  background: linear-gradient(to right, whitesmoke 50%,  var(--green)50%);
 
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: .8s;
-  background-color: whitesmoke;
+  transition: 1.8s;
+}
+
+.path {
+  fill: whitesmoke;
+  stroke: var(--green);
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+svg {
+  margin-top: 10px;
+
 }
 
 .logo {
@@ -33,8 +45,12 @@
 }
 
 .logo h2 {
-  margin-top: auto;
+  background-color: var(--pink);
+  color: var(--green);
+  margin-top: 25px;
   font-size: 24pt;
+  /* mix-blend-mode: difference; */
+  height: 100%;
 }
 
 .container {
@@ -44,7 +60,6 @@
 }
 
 .gallery {
-
   position: fixed;
   margin-top: 10vh;
   margin-left: 10vw;
@@ -64,12 +79,6 @@ img {
   margin: 4vh;
 }
 
-.header {
-  color: black;
-  font-family: Display;
-  mix-blend-mode: exclusion;
-  font-size: 58pt;
-}
 
 p {
   grid-column: 2;
@@ -80,7 +89,6 @@ p {
 }
 
 .content-section {
-
   scroll-snap-align: start;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -95,6 +103,11 @@ p {
   opacity: 1;
   filter: brightness(1);
 }
+.header {
+  color: whitesmoke;
+  font-family: Display;
+  font-size: 58pt;
+}
 
 .header-left {
   transform: translateX(90%);
@@ -105,18 +118,6 @@ p {
   transform: translateX(-10%);
   background-color: var(--pink);
 }
-
-.header-left:hover {
-  transform: translateX(90%);
-  background-color: var(--inverse-pink);
-}
-
-.header-right:hover {
-  transform: translateX(-10%);
-  background-color: var(--inverse-green);
-}
-
-.article {}
 
 .info {
   height: 80vh;
@@ -140,21 +141,21 @@ p {
 }
 
 .booking-container {
+  z-index: 999999;
   position: fixed;
   top: 45%;
 }
+
 .booking-button {
-  color: var(--inverse-pink);
+  color: var(--green);
   transform: rotate(-90deg);
-
 }
+
 .booking-button:hover {
-
-transform: rotate(-90deg) scale(1.1);
-
+  transform: rotate(-90deg) scale(1.1);
 }
-.booking-form{
 
+.booking-form {
   opacity: 0;
   top: 0;
   left: 0;
@@ -164,6 +165,7 @@ transform: rotate(-90deg) scale(1.1);
   width: 40vw;
   border: solid red 2px;
 }
+
 .show-form {
   opacity: 1;
   display: block;
