@@ -27,6 +27,7 @@ body {
   height: 10vw;
   width: 10vw;
   background-color: var(--pink);
+  mix-blend-mode: exclusion;
 }
 .path {
   fill: whitesmoke;
