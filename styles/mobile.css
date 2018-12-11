@@ -20,7 +20,11 @@
     height: auto;
   }
   
-  section .content-section .visible p{
+  .booking-container .booking-button .booking-form{
+    z-index: 3;
+  }
+  
+  section .content-section .visible p,{
     position: absolute;
   }
 }
