@@ -145,7 +145,6 @@ p {
 }
 .booking-button {
   color: var(--inverse-pink);
-
   transform: rotate(-90deg);
 
 }
