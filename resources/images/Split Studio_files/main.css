@@ -190,37 +190,16 @@ transform: translateX(2.5vw);
   position: fixed;
   height: 0vh;
   width: 0vw;
-}
-input[type=text]{
-  opacity: 1 !important;
-  border: none;
-  outline: none;
-  color: var(--green);
+
 }
 .input-field
 {
-  transform: translateY(5vh);
-  height: 10vh;
-  text-align: center;
-  background-color: transparent;
-  background: transparent;
-  outline: none;
+    background-color: var(--pink);
 }
-.input-field:focus
+.input-field[placeholder], .input-field[value]
 {
-background-color: var(--green);
-color: whitesmoke;
-}
-:placeholder-shown
-{
-    background-color: transparent;
-    background: transparent;
-}
-::placeholder,
-{
+opacity: 1;
 color: var(--green);
-    background-color: transparent;
-    background: transparent;
 }
 .show-form {
   top: 10vh;
@@ -228,7 +207,7 @@ color: var(--green);
   height: 80vh;
   width: 40vw;
   background-color: var(--pink);
-  opacity: .8;
+  opacity: .5;
     transition: .9;
     min-width: 500px;
 }

@@ -1,0 +1,32 @@
+@media screen and (max-width: 992px) {
+  h2 {
+    display: none !important;
+  }
+
+  .content-section {
+    grid-template-rows: repeat(auto-fill, minmax(80vh, 20vh));
+    grid-template-columns: 100%;
+    /* grid-template-columns: 100% !important; */
+    /* height: 80vh; */
+  }
+
+  img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .info {
+    height: auto;
+  }
+  
+  .booking-container .booking-button .booking-form{
+    z-index: 3;
+  }
+  
+  section .content-section .visible p,{
+    position: absolute;
+  }
+}
+
+/* comment */
