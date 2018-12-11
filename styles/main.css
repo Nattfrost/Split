@@ -29,6 +29,11 @@ body {
   background-color: var(--pink);
   mix-blend-mode: exclusion;
 }
+
+.mobile {
+  display: none;
+}
+
 .path {
   fill: whitesmoke;
   stroke: var(--green);

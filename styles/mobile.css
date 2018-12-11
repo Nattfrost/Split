@@ -20,13 +20,20 @@
     height: auto;
   }
   
-  .booking-container .booking-button .booking-form{
-    z-index: 3;
+  
+  .info .info-left p{
+    position: absolute;
+    color: var(--green) !important;
+  }
+  .info .info-right p{
+    position: absolute;
+    color: var(--green) !important;
   }
   
-  section .content-section .visible p,{
-    position: absolute;
+  
+  .content-section{
+    height: auto;
   }
+  
 }
 
-/* comment */
