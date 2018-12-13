@@ -1,18 +1,14 @@
 @media screen and (max-width: 992px) {
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 3ca10aee6ad84f679a5a722dd9280adc868cef9e
   .container h2, .right-mystery-box {
     display: none !important;
   }
-  
+
   .logo, .split-container h2{
     /* right: 20vw !important; */
-    
+
   }
-  
+
 
   .logo, .split-container h2{
     /* right: 20vw !important; */
@@ -34,61 +30,38 @@
     /* grid-column: 1 / 2; */
   }
 
-<<<<<<< HEAD
 
 
-=======
-  
-  
->>>>>>> 3ca10aee6ad84f679a5a722dd9280adc868cef9e
   .info-left p{
     color: var(--green) !important;
     /* color: var(--pink); */
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 3ca10aee6ad84f679a5a722dd9280adc868cef9e
   .info-right p{
     /* position: absolute; */
     color: whitesmoke !important;
     /* grid-column: 1; */
-<<<<<<< HEAD
   }
 
   .info{
-    font-size: 12pt;
     /* display: grid; */
   }
 
 
-=======
-  }
-  
-  .info{
-    /* display: grid; */
-  }
-  
-  
->>>>>>> 3ca10aee6ad84f679a5a722dd9280adc868cef9e
   .about{
     width: 100%;
     /* display: grid; */
     /* grid-column: 1 / 2; */
     /* position: absolute; */
   }
-<<<<<<< HEAD
-=======
-  
+
   .about{
-    
+
     font-size: 10pt;
   }
-  
-  
+
+
 }
->>>>>>> 3ca10aee6ad84f679a5a722dd9280adc868cef9e
 
   .about{
 

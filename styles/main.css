@@ -168,8 +168,6 @@ transform: translateX(2.5vw);
   background-color: var(--pink);
 }
 
-<<<<<<< HEAD
-=======
 .info {
   height: 80vh;
   display: flex;
@@ -188,7 +186,6 @@ transform: translateX(2.5vw);
   color: var(--pink) !important;
 }
 
->>>>>>> 3ca10aee6ad84f679a5a722dd9280adc868cef9e
 
 .contact-info {
   font-size: 16pt;
