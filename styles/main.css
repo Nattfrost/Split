@@ -111,6 +111,20 @@ p {
   text-align: justify;
 }
 
+.info {
+  height: 80vh;
+  display: flex;
+flex-direction: column-reverse;
+
+}
+.title {
+  margin-bottom: 0!important;
+  text-decoration: underline;
+}
+.info p {
+  margin-bottom: 10vh;
+}
+
 .info-right p {
 color: whitesmoke;
 transform: translateX(2.5vw);

@@ -12,6 +12,8 @@ The design is very clean and minimalistic in an attempt to steal as little atten
 We went with two fonts that worked well together and had the right feel.
 For our display font we chose Circular paired with MrsEaves for the articles.
 
+• Color
+We chose a main accent color (pink)  and then used the inverse of that (dark-green) as contrast.
 ## Wireframing
 Early in the project we did some quick pen-and-paper sketches to get a feel for the form.
 The final split-view of our site is an element that stuck with us since day 1!
