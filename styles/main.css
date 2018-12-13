@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Display-light';
+  src: url('../resources/fonts/circular-light.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Article';
   src: url('../resources/fonts/MrsEavesRoman.woff') format('woff');
 }
@@ -66,6 +71,8 @@ svg {
   color: var(--green);
   margin-top: 25px;
   font-size: 24pt;
+  letter-spacing: 2px;
+  padding: 3px;
   /* mix-blend-mode: difference; */
   height: 100%;
 }
@@ -99,13 +106,13 @@ img {
 p {
   grid-column: 2;
   display: block;
-  font-family: Display;
+  font-family: Display-light;
   font-size: 16pt;
   text-align: justify;
 }
 
 .info-right p {
-  color: whitesmoke;
+color: whitesmoke;
 transform: translateX(2.5vw);
 
 }
@@ -150,11 +157,19 @@ transform: translateX(2.5vw);
 .info {
   height: 80vh;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column-reverse;
 }
 
 .info p {
   margin-bottom: 10vh;
+}
+
+.info-title {
+  margin-bottom: 1vh !important;
+  font-family: Display;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: var(--pink) !important;
 }
 
 
