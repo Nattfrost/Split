@@ -274,6 +274,7 @@ color: whitesmoke;
     background: transparent;
 }
 .about {
+  font-size: 16pt;
   width: 40%;
   justify-content: flex-end;
 }

@@ -30,7 +30,9 @@
     /* grid-column: 1 / 2; */
   }
 
-
+p{
+    font-size: 10pt !important;
+}
 
   .info-left p{
     color: var(--green) !important;
@@ -49,24 +51,13 @@
 
 
   .about{
-    width: 100%;
-    /* display: grid; */
-    /* grid-column: 1 / 2; */
-    /* position: absolute; */
+      width: 100% !important;
+
+
   }
 
-  .about{
 
-    font-size: 10pt;
-  }
 
 
 }
-
-  .about{
-
-    font-size: 10pt;
-  }
-
-
 }
